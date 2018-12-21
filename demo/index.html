@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Multiplier</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="../src/css/normalize.css" />
+    <link rel="stylesheet" href="../src/css/style.css" />
+</head>
+<body>
+    <main class="container">
+        <h1>Recipe Multiplier</h1>
+
+        <form>
+            <fieldset>
+                <div class="form-row">
+                    <div class="col-6">
+                        <label for="recipe-name">Recipe Name</label>
+                        <input id="recipe-name" type="text" name="recipeName" required />
+                    </div>
+                    <div class="col-6">
+                        <label for="multiplier">Multiplier</label>
+                        <input id="multiplier" type="number" name="multiplier" required />
+                    </div>
+                </div>
+
+            </fieldset>
+            <div class="aaa"></div>
+            <hr/>
+            <fieldset class="ingredients-container">
+
+                <div class="form-row new-ingredient-container">
+                    <button id="new-ingredient-btn" class="btn btn-secondary" type="button">New Ingredient</button>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <div class="form-row form-submit-container">
+                    <div class="col-12">
+                        <button type="reset" class="btn btn-secondary">Reset Recipe</button>
+                        <button type="submit" class="btn btn-primary">Calculate</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <script src="../src/js/FormBuilder.js" defer></script>
+    <script src="../src/js/script.js" defer></script>
+</body>
+</html>
